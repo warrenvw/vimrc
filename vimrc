@@ -40,7 +40,7 @@ set t_Co=256
 
 " Set the default font
 " set guifont=Monaco:h13
-set guifont=Meslo\ LG\ S\ for\ Powerline:h14
+set guifont=Meslo\ LG\ S\ for\ Powerline:h16
 
 " Hide the toolbar
 set guioptions-=T
@@ -50,7 +50,7 @@ set guioptions-=r
 set go-=L
 
 " Set the colorscheme to dark mode
-" set background=dark
+set background=dark
 
 " Enable syntax
 syntax enable
@@ -185,18 +185,7 @@ let g:syntastic_check_on_open=1
 let g:netrw_list_hide='.DS_Store,^\.git/$'
 
 " Set the colorscheme
-"colorscheme Tomorrow
-"colorscheme zellner
-"colorscheme zazen
-"colorscheme two2tango
-"colorscheme lazarus
-"colorscheme kiss
-"colorscheme kellys
-"colorscheme guepardo
-"colorscheme inkpot
-"colorscheme getfresh
-"colorscheme fruity
-"colorscheme guepardo
+colorscheme fruidle
 
 " Highlight overlength
 if has('gui_running')
@@ -206,4 +195,3 @@ if has('gui_running')
   highlight OverLength guibg=#FF8181
   match OverLength /\%>100v.\+/
 endif
-colorscheme kate
