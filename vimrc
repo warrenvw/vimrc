@@ -185,7 +185,7 @@ let g:syntastic_check_on_open=1
 let g:netrw_list_hide='.DS_Store,^\.git/$'
 
 " Set the colorscheme
-colorscheme fruidle
+colorscheme github
 
 " Highlight overlength
 if has('gui_running')
