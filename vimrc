@@ -145,24 +145,6 @@ set noesckeys
 set textwidth=100
 set formatoptions=qrn1
 
-" ColorStepper Keys
-"nmap <F6> <Plug>ColorstepPrev
-"nmap <F7> <Plug>ColorstepNext
-"nmap <S-F7> <Plug>ColorstepReload
-
-" Handy key remaps
-map <c-f> <c-f>zz
-map <c-b> <c-b>zz
-map n nzz
-map N Nzz
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
-map <Leader>o :CtrlPMixed<CR>
-noremap <c-]> :lnext<CR>
-noremap <c-[> :lprev<CR>
-
-map <Leader>gt :call TimeLapse() <CR>
-
 " Prevent goofy backup files
 set nobackup
 
