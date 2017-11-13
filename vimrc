@@ -147,6 +147,7 @@ set formatoptions=qrn1
 
 " Prevent goofy backup files
 set nobackup
+set nowritebackup
 
 " Prevent the creation of swp files, they're just a mess
 set noswapfile
@@ -169,11 +170,14 @@ let g:netrw_list_hide='.DS_Store,^\.git/$'
 " Set the colorscheme
 colorscheme github
 
+" Airline settings
+let g:airline_theme = 'aurora'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+let g:pymode_options_max_line_length=100
+autocmd FileType python set colorcolumn=100
+
 " Highlight overlength
-if has('gui_running')
-  let g:airline_theme = 'lucius'
-  let g:airline_powerline_fonts = 1
-  let g:airline#extensions#tabline#enabled = 1
-  highlight OverLength guibg=#FF8181
-  match OverLength /\%>100v.\+/
-endif
+highlight OverLength guibg=#FF8181
+match OverLength /\%>100v.\+/
